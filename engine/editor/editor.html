@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title id="editortitle">Scribble - Editor</title>
+        <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+        <link rel="stylesheet" href="./editor.css"/>
+        <script>
+            require("../../build/engine/editor/text/TextEditor.js")
+        </script>
+    </head>
+
+    <body style="overflow: hidden;" bgcolor="#e8e8e8">
+        <div id="notif" style="position:absolute; width: 500px;" class="Absolute-Center notification is-primary">
+            <button id="notifclosebutton" class="delete"></button>
+            <strong>script saved</strong>
+          </div>
+        <div style="font-size: 24px;text-align: center;padding-bottom: 20px;padding-top: 20px;">
+            <strong>Scribble</strong>
+        </div>
+
+
+        <div contenteditable spellcheck="true" class="container box" style="width: 80%;background-color: #fafafa;border-radius: 17px; overflow: auto;" id="texteditor">
+
+        </div>
+
+        <div class="bottom-center">
+            <div>
+
+            </div>
+        </div>
+
+
+    </body>
+</html>

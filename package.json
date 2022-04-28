@@ -1,0 +1,37 @@
+{
+  "name": "scribble",
+  "version": "0.0.1",
+  "description": "An app to easily be able to make scripts for youtube videos. (im basically making this because im procastinating)",
+  "main": "build/main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "pack:win":"electron-packager . --overwrite --platform=win32 --arch=x64 --out release --icon=assets/anothertemplogo.png",
+    "pack:osxarm": "electron-packager . --overwrite --platform=darwin --arch=arm64 --out release --icon=assets/anothertemplogo.png",
+    "pack:osx": "electron-packager . --overwrite --platform=darwin --arch=x64 --out release --icon=assets/anothertemplogo.png",
+    "dist": "electron-builder build -m"
+  },
+  "keywords": [
+    "scribble"
+  ],
+  "author": "penguindetox",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "electron": "^18.1.0",
+    "electron-builder": "^23.0.3",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "jquery": "^3.6.0"
+  },
+  "build": {
+    "appId": "com.electron.scribbleapp",
+    "productName": "Scribble",
+    "mac": {
+      "target": "mas"
+    },
+    "extends": null,
+    "files": []
+  }
+}

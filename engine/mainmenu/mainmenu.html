@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css" />
+        <title>Scribble</title>
+    </head>
+    <body>
+        <form class="container" style="width: 60%;" id="create-project">
+            <h1 style="font-size: 30px;text-align: center;">Scribble</h1>
+            <br>
+            <div class="field">
+                <div class="control">
+                    <label class="label">Script name</label>
+                    <input required id="script-name" type="text" class="input" placeholder="Enter script name..." />
+                </div>
+            
+
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="label">Script location</label>
+                    <input required id="script-location" type="text" class="input" placeholder="Enter script name..." />
+                     <button id="location-button" class="button is-success">...</button>
+                </div>
+            </div>
+
+            <div class="control">
+                <button type="submit" class="button is-primary">
+                    Create Script
+                </button>
+                <button id="loadscript" class="button is-success">
+                    Load Script
+                </button>
+            </div>
+
+        </form>
+
+        <script>require('../../build/engine/mainmenu/mainmenu.js')</script>
+    </body>
+</html>
